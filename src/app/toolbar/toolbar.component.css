@@ -1,0 +1,12 @@
+.toolbar-sticky {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--secondary-dark);
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}

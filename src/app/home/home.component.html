@@ -1,20 +1,31 @@
 <mat-grid-list
-  cols="1"
+  cols="16"
   rowHeight="fit"
   style="height: 100vh; text-align: center"
-  class="bgPrimary"
+  class="bgHome-banner"
 >
-  <mat-grid-tile>
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title> this is me! </mat-card-title>
-      </mat-card-header>
-      <img
-        mat-card-image
-        src="../../assets/images/profielfoto.jpg"
-        alt="mijn profielfoto"
-        height="350px"
-      />
-    </mat-card>
+  <mat-grid-tile colspan="3" class="bgHome-banner-bracket">
+    <div
+      class="bgHome-banner-bracket-left"
+      [ngClass]="{ 'content-small': contentSmall }"
+    >
+      {{ "{" }}
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="10">
+    <img
+      mat-card-image
+      src="../../assets/images/profielfoto.png"
+      alt="mijn profielfoto"
+      [width]="contentHeight"
+    />
+  </mat-grid-tile>
+  <mat-grid-tile colspan="3" class="bgHome-banner-bracket">
+    <div
+      class="bgHome-banner-bracket-right"
+      [ngClass]="{ 'content-small': contentSmall }"
+    >
+      {{ "}" }}
+    </div>
   </mat-grid-tile>
 </mat-grid-list>

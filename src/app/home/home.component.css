@@ -1,0 +1,23 @@
+.bgHome-banner {
+  background-color: var(--accent-dark);
+}
+
+.bgHome-banner-bracket {
+  color: var(--highlight);
+  font-weight: lighter;
+}
+
+.bgHome-banner-bracket-left {
+  font-size: 350px;
+  width: 100%;
+  text-align: right;
+}
+
+.bgHome-banner-bracket-right {
+  font-size: 350px;
+  width: 100%;
+  text-align: left;
+}
+.content-small {
+  font-size: 150px;
+}
