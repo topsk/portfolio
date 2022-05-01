@@ -1,0 +1,14 @@
+.quote-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-family: "EB Garamond", "Georgia", serif;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.author {
+  text-align: end;
+}

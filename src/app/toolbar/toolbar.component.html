@@ -1,25 +1,68 @@
-<mat-toolbar class="toolbar-sticky">
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with menu icon"
-  >
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>My App</span>
-  <span class="toolbar-spacer"></span>
-  <button
-    mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
-  >
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with share icon"
-  >
-    <mat-icon>share</mat-icon>
-  </button>
+<mat-toolbar
+  [ngClass]="{ hide: !toolbarVisible, show: toolbarVisible }"
+  class="toolbar-sticky"
+>
+  <div fxFlex>
+    <div fxLayout="row" fxLayoutAlign="left center">
+      <div>
+        <button mat-icon-button aria-label="menu icon">
+          <mat-icon class="toolbar-icon" (click)="toggleToolbar()">{{
+            menuIcon
+          }}</mat-icon>
+        </button>
+      </div>
+
+      <div fxFlex>
+        <div fxLayout="row" fxLayoutAlign="space-evenly center">
+          <button
+            mat-button
+            [disabled]="!toolbarVisible"
+            [ngClass]="{
+              hideBtn: !toolbarVisible,
+              showBtn: toolbarVisible
+            }"
+            (click)="scroll('personal')"
+          >
+            Over Mij
+          </button>
+
+          <button
+            mat-button
+            [disabled]="!toolbarVisible"
+            [ngClass]="{
+              hideBtn: !toolbarVisible,
+              showBtn: toolbarVisible
+            }"
+            (click)="scroll('interests')"
+          >
+            Interesses
+          </button>
+
+          <button
+            mat-button
+            [disabled]="!toolbarVisible"
+            [ngClass]="{
+              hideBtn: !toolbarVisible,
+              showBtn: toolbarVisible
+            }"
+            (click)="scroll('professional')"
+          >
+            Professioneel
+          </button>
+
+          <button
+            mat-button
+            [disabled]="!toolbarVisible"
+            [ngClass]="{
+              hideBtn: !toolbarVisible,
+              showBtn: toolbarVisible
+            }"
+            (click)="scroll('links')"
+          >
+            Links
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </mat-toolbar>

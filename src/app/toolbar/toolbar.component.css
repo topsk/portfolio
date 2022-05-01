@@ -1,12 +1,32 @@
 .toolbar-sticky {
   position: fixed;
   top: 0;
-  height: 50px;
+  height: var(--toolbar-height);
   width: 100%;
   z-index: 1000;
   background-color: var(--secondary-dark);
 }
 
-.toolbar-spacer {
-  flex: 1 1 auto;
+.hide {
+  background-color: transparent;
+  transition: all 2s 0s ease-out;
+}
+
+.hideBtn {
+  opacity: 0;
+  transition: all 0.5s 0s ease-out;
+}
+
+.show {
+  background-color: var(--secondary-dark);
+  transition: all 0.25s 0s ease-out;
+}
+
+.showBtn {
+  opacity: 100;
+  transition: all 1s 0s ease-out;
+}
+
+.toolbar-icon {
+  color: var(--highlight);
 }

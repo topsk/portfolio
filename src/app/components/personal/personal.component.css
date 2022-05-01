@@ -1,0 +1,8 @@
+#personal {
+  padding-top: var(--toolbar-height);
+  min-height: var(--component-height);
+}
+
+.card {
+  padding: 20px;
+}

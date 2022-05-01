@@ -1,0 +1,4 @@
+#links {
+  padding-top: var(--toolbar-height);
+  min-height: var(--component-height);
+}

@@ -1,0 +1,82 @@
+<div id="interests">
+  <div fxFlex fxLayout="row">
+    <div fxFlex="20"></div>
+    <div fxFlex="60" fxLayout="column">
+      <h2>Interesses & hobby's</h2>
+      <div fxLayout="column">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <div
+            fxLayout="column"
+            fxLayoutAlign="center center"
+            fxFlex="65"
+            fxFlex.lt-sm="100"
+          >
+            <div>Huidige intresses & hobby's</div>
+            <mat-list>
+              <mat-list-item>
+                <mat-icon mat-list-icon aria-label="gaming icon"
+                  >sports_esports</mat-icon
+                >
+                <div mat-line>Gamen</div>
+              </mat-list-item>
+
+              <mat-list-item>
+                <mat-icon mat-list-icon aria-label="eBike icon"
+                  >electric_bike</mat-icon
+                >
+                <div mat-line>Fietsen</div>
+              </mat-list-item>
+
+              <mat-list-item>
+                <mat-icon mat-list-icon aria-label="jogging icon"
+                  >directions_run</mat-icon
+                >
+                <div mat-line>Joggen</div>
+              </mat-list-item>
+
+              <mat-list-item>
+                <mat-icon mat-list-icon aria-label="hiking icon"
+                  >hiking</mat-icon
+                >
+                <div mat-line>Hiken</div>
+              </mat-list-item>
+            </mat-list>
+          </div>
+          <div fxHide.lt-sm="true"></div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="end center">
+          <div fxHide.lt-sm="true"></div>
+          <div
+            fxLayout="column"
+            fxLayoutAlign="center center"
+            fxFlex="65"
+            fxFlex.lt-sm="100"
+          >
+            <div>Niet langer active hobby's</div>
+            <mat-list>
+              <mat-list-item>
+                <mat-icon mat-list-icon aria-label="gamen icon"
+                  >music_note</mat-icon
+                >
+                <div mat-line>Fanfare</div>
+              </mat-list-item>
+              <mat-list-item>
+                <mat-icon mat-list-icon aria-label="gamen icon"
+                  >sports_soccer</mat-icon
+                >
+                <div mat-line>Zaalvoetbal</div>
+              </mat-list-item>
+            </mat-list>
+          </div>
+        </div>
+
+        <app-quote
+          quote="One must renounce the bad taste of wishing to agree with many people."
+          author="Friedrich Nietzsche"
+        ></app-quote>
+        <div fxFlex="20"></div>
+      </div>
+    </div>
+  </div>
+</div>

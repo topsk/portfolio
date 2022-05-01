@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   contentSmall = false;
 
   snackBarOptions = {
-    duration: 5000,
+    duration: 3000,
     horizontalPosition: 'center' as MatSnackBarHorizontalPosition,
     verticalPosition: 'top' as MatSnackBarVerticalPosition,
   };

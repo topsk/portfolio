@@ -14,19 +14,20 @@ body {
   --secondary-light: #def2f1;
   --accent-dark: #17252a;
   --accent-light: #feffff;
-
-  /* pick a highlight color here */
   --highlight: #dbd56e;
-  /* --highlight: #cc3363; */
-  /* --highlight: #95c623; */
-  /* --highlight: #ed6a5a; */
-  /* --highlight: #ff6f59; */
+
+  --toolbar-height: 50px;
+  --component-height: 100vh;
 }
 
 /* #region General styling*/
 
 .bgPrimary {
   background-color: var(--primary);
+}
+
+.btnLink {
+  color: var(--highlight);
 }
 
 /* #endregion General styling*/

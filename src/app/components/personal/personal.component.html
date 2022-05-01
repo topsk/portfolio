@@ -1,0 +1,100 @@
+<div id="personal">
+  <div fxFlex fxLayout="row">
+    <div fxFlex="20"></div>
+    <div fxFlex="60">
+      <h2>Over Mij</h2>
+      <div>
+        <p>
+          Hallo, ik ben Kristof Tops.
+          <br />
+          Ik heb altijd een sterke aantrekking gehad tot alles wat met computers
+          en technologie te maken heeft, hoewel ik er in mijn professionele
+          leven maar bepekt in contact met geweest ben.
+          <br />
+          In 2019 heb ik dan ook besloten mezelf om te scholen tot programmeur,
+          na een 3 jarige avondopleiding aan Thomas More studeer ik in 2022 af
+          als graduaat.
+          <br />
+          Voordien heb ik voornamelijk gewerkt als receptionist en
+          bewakingsagent in een volcontinue ploegensysteem.
+        </p>
+      </div>
+
+      <div>
+        <mat-card>
+          <mat-card-subtitle>Enkele gegevens</mat-card-subtitle>
+          <mat-card-title
+            >{{ personal.firstName }} {{ personal.lastName }}</mat-card-title
+          >
+          <mat-card-actions>
+            <mat-list>
+              <mat-list-item>
+                <div fxLayout="row" fxLayout.lt-sm="column" matLine>
+                  <div>Geboortedatum:&ensp;</div>
+                  <div>
+                    &ensp;{{ personal.birthDate.toLocaleDateString() }} ({{
+                      personal.age
+                    }})
+                  </div>
+                </div>
+              </mat-list-item>
+              <mat-divider [inset]="true"></mat-divider>
+              <mat-list-item>
+                <div fxLayout="row" fxLayout.lt-sm="column" matLine>
+                  <div>Adress:</div>
+                  <div>&ensp;{{ personal.adress }}</div>
+                </div>
+              </mat-list-item>
+              <mat-divider [inset]="true"></mat-divider>
+              <mat-list-item>
+                <div fxLayout="row" fxLayout.lt-sm="column" matLine>
+                  <div>Email:</div>
+                  <div>&ensp;{{ personal.email }}</div>
+                </div>
+              </mat-list-item>
+              <mat-divider [inset]="true"></mat-divider>
+              <mat-list-item>
+                <div fxLayout="row" fxLayout.lt-sm="column" matLine>
+                  <div>GSM:</div>
+                  <div>&ensp;{{ personal.GSM }}</div>
+                </div>
+              </mat-list-item>
+              <mat-divider [inset]="true"></mat-divider>
+              <mat-list-item>
+                <div matLine>
+                  <a
+                    mat-stroked-button
+                    href="{{ personal.linkedIn }}"
+                    target="_blank"
+                    class="btnLink"
+                    >Mijn LinkedIn</a
+                  >
+                </div>
+              </mat-list-item>
+              <mat-divider [inset]="true"></mat-divider>
+              <mat-list-item>
+                <div matLine>
+                  <a
+                    mat-stroked-button
+                    href="{{ personal.CV }}"
+                    download="Kristof Tops CV"
+                    class="btnLink"
+                  >
+                    Mijn CV
+                  </a>
+                </div>
+              </mat-list-item>
+            </mat-list>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <app-quote
+        quote="If you want to assert a truth, first make sure it’s not just an opinion
+        that you desperately want to be true."
+        author="Neil Degrasse Tyson"
+      ></app-quote>
+    </div>
+    <div fxFlex="20"></div>
+  </div>
+</div>

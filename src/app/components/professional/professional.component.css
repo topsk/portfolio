@@ -1,0 +1,14 @@
+#professional {
+  padding-top: var(--toolbar-height);
+  min-height: var(--component-height);
+}
+
+.devicon-icon {
+  font-size: clamp(20px, calc(5px + 10vw), 150px);
+}
+
+.devicon-icon-container {
+  background-color: var(--secondary-light);
+  border-radius: 20px;
+  padding: 10px;
+}
