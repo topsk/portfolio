@@ -1,27 +1,30 @@
 <div id="personal">
   <div fxFlex fxLayout="row">
     <div fxFlex="20"></div>
-    <div fxFlex="60">
-      <h2>Over Mij</h2>
+    <div fxFlex="60" fxLayout="column" fxLayoutAlign="space-between none">
       <div>
-        <p>
-          Hallo, ik ben Kristof Tops.
-          <br />
-          Ik heb altijd een sterke aantrekking gehad tot alles wat met computers
-          en technologie te maken heeft, hoewel ik er in mijn professionele
-          leven maar bepekt in contact met geweest ben.
-          <br />
-          In 2019 heb ik dan ook besloten mezelf om te scholen tot programmeur,
-          na een 3 jarige avondopleiding aan Thomas More studeer ik in 2022 af
-          als graduaat.
-          <br />
-          Voordien heb ik voornamelijk gewerkt als receptionist en
-          bewakingsagent in een volcontinue ploegensysteem.
-        </p>
+        <h2 class="aboutMe">Over Mij</h2>
+        <div class="aboutMe">
+          <p>
+            Hallo, ik ben Kristof Tops.
+            <br />
+            Ik heb altijd een sterke aantrekking gehad tot alles wat met
+            computers en technologie te maken heeft, hoewel ik er in mijn
+            professionele leven maar beperkt in contact met geweest ben.
+            <br />
+            In 2019 heb ik dan ook besloten mezelf om te scholen tot
+            programmeur, na een 3 jarige avondopleiding aan Thomas More studeer
+            ik in 2022 af als graduaat.
+            <br />
+            Voordien heb ik voornamelijk gewerkt als receptionist en
+            bewakingsagent in een volcontinue ploegensysteem.
+          </p>
+        </div>
       </div>
 
-      <div>
-        <mat-card>
+      <div class="aboutMe">
+        <div fxFlex="0" fxFlex.gt-sm="20"></div>
+        <mat-card fxFlex="100" fxFlex.gt-sm="60">
           <mat-card-subtitle>Enkele gegevens</mat-card-subtitle>
           <mat-card-title
             >{{ personal.firstName }} {{ personal.lastName }}</mat-card-title
@@ -59,7 +62,7 @@
                   <div>&ensp;{{ personal.GSM }}</div>
                 </div>
               </mat-list-item>
-              <mat-divider [inset]="true"></mat-divider>
+
               <mat-list-item>
                 <div matLine>
                   <a
@@ -71,14 +74,13 @@
                   >
                 </div>
               </mat-list-item>
-              <mat-divider [inset]="true"></mat-divider>
+
               <mat-list-item>
                 <div matLine>
                   <a
                     mat-stroked-button
                     href="{{ personal.CV }}"
                     download="Kristof Tops CV"
-                    class="btnLink"
                   >
                     Mijn CV
                   </a>
@@ -87,6 +89,7 @@
             </mat-list>
           </mat-card-actions>
         </mat-card>
+        <div fxFlex="0" fxFlex.gt-sm="20"></div>
       </div>
 
       <app-quote

@@ -14,7 +14,7 @@ export class PersonalComponent implements OnInit {
     email: 'topsk@hotmail.com',
     GSM: '0472/23.24.86',
     linkedIn: 'https://www.linkedin.com/in/kristof-tops-408378207/',
-    CV: '/',
+    CV: 'assets/docs/MijnCV.pdf',
     age: 0,
   };
 

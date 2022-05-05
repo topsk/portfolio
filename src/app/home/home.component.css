@@ -1,23 +1,14 @@
-.bgHome-banner {
+#home {
+  padding-top: var(--toolbar-height);
+  min-height: var(--component-height);
   background-color: var(--accent-dark);
 }
 
-.bgHome-banner-bracket {
+.text {
+  font-size: calc(10px + 3vw);
   color: var(--highlight);
-  font-weight: lighter;
 }
 
-.bgHome-banner-bracket-left {
-  font-size: 350px;
-  width: 100%;
-  text-align: right;
-}
-
-.bgHome-banner-bracket-right {
-  font-size: 350px;
-  width: 100%;
-  text-align: left;
-}
-.content-small {
-  font-size: 150px;
+.bgHome-banner-bracket-mirrored {
+  transform: scaleX(-1);
 }

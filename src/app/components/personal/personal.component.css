@@ -3,6 +3,20 @@
   min-height: var(--component-height);
 }
 
-.card {
-  padding: 20px;
+.aboutMe {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.mat-card,
+.mat-card-subtitle,
+.mat-card-title,
+.mat-list-item {
+  background-color: var(--secondary-light);
+  color: var(--accent-dark);
+}
+
+.mat-divider {
+  background-color: var(--accent-dark);
+  color: var(--accent-dark);
 }

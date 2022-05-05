@@ -1,30 +1,21 @@
-<mat-grid-list
-  cols="16"
-  rowHeight="fit"
-  style="height: 100vh; text-align: center"
-  class="bgHome-banner"
->
-  <mat-grid-tile colspan="3" class="bgHome-banner-bracket">
-    <div
-      class="bgHome-banner-bracket-left"
-      [ngClass]="{ 'content-small': contentSmall }"
-    >
-      {{ "{" }}
+<div fxLayout="column" fxLayoutAlign="space-evenly stretch" id="home">
+  <div fxFlex="20" fxLayoutAlign="center center" class="text">
+    Ik ben Kristof Tops
+  </div>
+  <div fxFlex="60" fxLayout="row" fxLayoutAlign="space-evenly center">
+    <div fxFlex="20" class="bgHome-banner-bracket-mirrored">
+      <img src="assets/images/Curly_bracket.svg" [height]="contentHeight" />
     </div>
-  </mat-grid-tile>
-  <mat-grid-tile colspan="10">
-    <img
-      src="assets/images/profielfoto.png"
-      alt="mijn profielfoto"
-      [width]="contentHeight"
-    />
-  </mat-grid-tile>
-  <mat-grid-tile colspan="3" class="bgHome-banner-bracket">
-    <div
-      class="bgHome-banner-bracket-right"
-      [ngClass]="{ 'content-small': contentSmall }"
-    >
-      {{ "}" }}
+    <div fxFlex="60" fxLayoutAlign="center center">
+      <img
+        src="assets/images/profielfoto.png"
+        [height]="contentHeight"
+        alt="mijn profielfoto"
+      />
     </div>
-  </mat-grid-tile>
-</mat-grid-list>
+    <div fxFlex="20">
+      <img src="assets/images/Curly_bracket.svg" [height]="contentHeight" />
+    </div>
+  </div>
+  <div fxFlex="20" fxLayoutAlign="center center" class="text">Developer</div>
+</div>

@@ -26,8 +26,13 @@ body {
   background-color: var(--primary);
 }
 
-.btnLink {
-  color: var(--highlight);
+.mat-stroked-button {
+  color: var(--accent-light);
+  background-color: var(--secondary-dark);
+}
+
+.mat-stroked-button:hover {
+  color: var(--primary);
 }
 
 /* #endregion General styling*/
