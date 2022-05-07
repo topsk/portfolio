@@ -14,7 +14,10 @@ body {
   --secondary-light: #def2f1;
   --accent-dark: #17252a;
   --accent-light: #feffff;
-  --highlight: #dbd56e;
+  /* --highlight: #0afcf0; */
+  /* --highlight: #2ce6dc; */
+  /* --highlight: #d2edf7; */
+  --highlight: #f5ee9e;
 
   --toolbar-height: 50px;
   --component-height: 100vh;

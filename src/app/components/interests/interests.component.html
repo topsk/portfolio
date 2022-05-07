@@ -1,9 +1,11 @@
 <div id="interests">
   <div fxFlex fxLayout="row">
     <div fxFlex="20"></div>
-    <div fxFlex="60" fxLayout="column">
-      <h2>Interesses & hobby's</h2>
-      <div fxLayout="column">
+    <div fxFlex="60" fxLayout="column" fxLayoutAlign="space-between none">
+      <div>
+        <h1>Interesses & hobby's</h1>
+      </div>
+      <div fxLayout="column" fxLayoutAlign="space-evenly stretch">
         <div fxLayout="row" fxLayoutAlign="start center">
           <div
             fxLayout="column"
@@ -11,7 +13,6 @@
             fxFlex="65"
             fxFlex.lt-sm="100"
           >
-            <div>Huidige intresses & hobby's</div>
             <mat-list>
               <mat-list-item>
                 <mat-icon mat-list-icon aria-label="gaming icon"
@@ -53,13 +54,12 @@
             fxFlex="65"
             fxFlex.lt-sm="100"
           >
-            <div>Niet langer active hobby's</div>
             <mat-list>
               <mat-list-item>
                 <mat-icon mat-list-icon aria-label="gamen icon"
                   >music_note</mat-icon
                 >
-                <div mat-line>Fanfare</div>
+                <div mat-line class="test">Fanfare</div>
               </mat-list-item>
               <mat-list-item>
                 <mat-icon mat-list-icon aria-label="gamen icon"
@@ -70,13 +70,12 @@
             </mat-list>
           </div>
         </div>
-
-        <app-quote
-          quote="One must renounce the bad taste of wishing to agree with many people."
-          author="Friedrich Nietzsche"
-        ></app-quote>
-        <div fxFlex="20"></div>
       </div>
+      <app-quote
+        quote="One must renounce the bad taste of wishing to agree with many people."
+        author="Friedrich Nietzsche"
+      ></app-quote>
     </div>
+    <div fxFlex="20"></div>
   </div>
 </div>

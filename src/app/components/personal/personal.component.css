@@ -8,6 +8,11 @@
   padding-right: 15px;
 }
 
+.aboutMe p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .mat-card,
 .mat-card-subtitle,
 .mat-card-title,

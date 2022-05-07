@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
   toolbarVisible: boolean = false;
+  toolbarVisibleScroll: boolean = false;
   menuIcon: string = 'menu';
+  // timeOutRunning: boolean = false;
+  scrollTimerId: any;
 
   constructor() {}
 
@@ -19,10 +22,22 @@ export class ToolbarComponent implements OnInit {
   }
 
   scroll(id: string) {
-    console.log('test');
     let el = document.getElementById(id);
     if (el != null) {
       el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+    if (!this.toolbarVisible) {
+      clearTimeout(this.scrollTimerId);
+
+      this.toolbarVisibleScroll = true;
+
+      this.scrollTimerId = setTimeout(() => {
+        this.toolbarVisibleScroll = false;
+      }, 1500);
     }
   }
 }

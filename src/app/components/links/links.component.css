@@ -2,3 +2,54 @@
   padding-top: var(--toolbar-height);
   min-height: var(--component-height);
 }
+
+.projectBtn {
+  min-width: calc(125px + 10vw);
+  width: calc(40vw);
+}
+
+.expansion-panel {
+  margin: 25px 0px;
+  background-color: var(--accent-light);
+}
+
+.expansion-panel mat-panel-title {
+  color: var(--accent-dark);
+}
+
+.expansion-panel mat-panel-description {
+  color: var(--secondary-dark);
+}
+
+.expansion-panel mat-expansion-panel-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--secondary-light);
+}
+
+::ng-deep .mat-expansion-panel .mat-expansion-panel-header-title,
+::ng-deep .mat-expansion-panel .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+::ng-deep .mat-expansion-panel .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+::ng-deep .mat-expansion-panel .mat-expansion-panel-body {
+  padding: 24px;
+}
+
+::ng-deep .mat-expansion-indicator:after {
+  color: var(--accent-dark);
+}
+
+::ng-deep .mat-expansion-panel .mat-stroked-button {
+  margin: 10px 0px;
+  padding: 7px 14px;
+}
+
+.devicon-github {
+  font-size: 24px;
+}

@@ -11,4 +11,9 @@
 
 .bgHome-banner-bracket-mirrored {
   transform: scaleX(-1);
+  text-align: center;
+}
+
+.bgHome-banner-bracket {
+  text-align: center;
 }

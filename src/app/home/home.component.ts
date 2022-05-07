@@ -1,11 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
-import {
-  MatSnackBar,
-  MatSnackBarHorizontalPosition,
-  MatSnackBarVerticalPosition,
-} from '@angular/material/snack-bar';
 import { Subject } from 'rxjs';
 
 @Component({
@@ -19,16 +14,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   contentHeight = 350;
   contentSmall = false;
 
-  snackBarOptions = {
-    duration: 3000,
-    horizontalPosition: 'center' as MatSnackBarHorizontalPosition,
-    verticalPosition: 'top' as MatSnackBarVerticalPosition,
-  };
-
-  constructor(
-    private _snackBar: MatSnackBar,
-    breakpointObs: BreakpointObserver
-  ) {
+  constructor(breakpointObs: BreakpointObserver) {
     breakpointObs.observe(Breakpoints.XSmall).subscribe((result) => {
       if (result.matches) {
         this.contentHeight = 150;
@@ -40,28 +26,10 @@ export class HomeComponent implements OnInit, OnDestroy {
     });
   }
 
-  //#region Events
-
-  ngOnInit(): void {
-    this.showSnackBar();
-  }
+  ngOnInit(): void {}
 
   ngOnDestroy(): void {
     this.destroyBreakpointObs.next();
     this.destroyBreakpointObs.complete();
   }
-
-  //#endregion Events
-
-  //#region Functions
-
-  showSnackBar() {
-    this._snackBar.open(
-      'Work In Progress (please revisit later)',
-      undefined,
-      this.snackBarOptions
-    );
-  }
-
-  //#endregion Functions
 }

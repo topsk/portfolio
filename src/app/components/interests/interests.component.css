@@ -2,3 +2,7 @@
   padding-top: var(--toolbar-height);
   min-height: var(--component-height);
 }
+
+.mat-list-icon {
+  transform: scale(2);
+}

@@ -1,5 +1,9 @@
 <mat-toolbar
-  [ngClass]="{ hide: !toolbarVisible, show: toolbarVisible }"
+  [ngClass]="{
+    hide: !toolbarVisible || !toolbarVisibleScroll,
+    show: toolbarVisible || toolbarVisibleScroll
+  }"
+  (scroll)="onScroll()"
   class="toolbar-sticky"
 >
   <div fxFlex>

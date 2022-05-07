@@ -1,11 +1,134 @@
 <div id="links">
   <div fxFlex fxLayout="row">
     <div fxFlex="20"></div>
-    <div fxFlex="60">
-      <h2>Links</h2>
-      <div>placeholder</div>
+    <div fxFlex="60" fxLayout="column" fxLayoutAlign="space-between none">
+      <h1>Links</h1>
+      <div>
+        <mat-expansion-panel class="expansion-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>persoonlijk</mat-panel-title>
+            <mat-panel-description
+              >persoonlijke documenten</mat-panel-description
+            >
+          </mat-expansion-panel-header>
+          <div
+            fxLayout="row"
+            fxLayout.lt-sm="column"
+            fxLayoutAlign="space-evenly center"
+          >
+            <div>
+              <a
+                mat-stroked-button
+                href="{{ links.CV }}"
+                download="Kristof Tops CV"
+              >
+                Mijn CV
+              </a>
+            </div>
+            <div>
+              <a mat-stroked-button href="{{ links.linkedIn }}" target="_blank"
+                >Mijn LinkedIn</a
+              >
+            </div>
+          </div>
+        </mat-expansion-panel>
 
-      <div>placeholder</div>
+        <mat-expansion-panel class="expansion-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>stage</mat-panel-title>
+            <mat-panel-description>stage documenten</mat-panel-description>
+          </mat-expansion-panel-header>
+          <div
+            fxLayout="row"
+            fxLayout.lt-md="column"
+            fxLayoutAlign="space-evenly center"
+          >
+            <div>
+              <a
+                mat-stroked-button
+                href="{{ links.nitorReport }}"
+                target="_blank"
+                >Stage verslag <br />Nitor.be</a
+              >
+            </div>
+            <div>
+              <a mat-stroked-button href="{{ links.nitorSite }}" target="_blank"
+                >Website stageplaats <br />
+                Nitor.be</a
+              >
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel class="expansion-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>(school) projecten</mat-panel-title>
+            <mat-panel-description
+              >enkele van mijn projecten</mat-panel-description
+            >
+          </mat-expansion-panel-header>
+          <div fxLayout="column" fxLayoutAlign="space-evenly center">
+            <div>
+              <a
+                mat-stroked-button
+                href="{{ links.gitHub_general }}"
+                target="_blank"
+                class="projectBtn"
+              >
+                <div fxLayout="row" fxLayoutAlign="center center">
+                  <div fxFlex="15" fxLayoutAlign="end center">
+                    <i class="devicon-github-original devicon-github"></i>
+                  </div>
+                  <div fxFlex="70">
+                    Portfolio <br />
+                    (source code)
+                  </div>
+                  <div fxFlex="15"></div></div
+              ></a>
+            </div>
+            <div>
+              <a
+                mat-stroked-button
+                href="{{ links.gitHub_portfolio }}"
+                target="_blank"
+                class="projectBtn"
+              >
+                <div fxLayout="row" fxLayoutAlign="center center">
+                  <div fxFlex="15" fxLayoutAlign="end center">
+                    <i class="devicon-github-original devicon-github"></i>
+                  </div>
+                  <div fxFlex="70">
+                    Portfolio <br />
+                    (source code)
+                  </div>
+                  <div fxFlex="15"></div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a
+                mat-stroked-button
+                href="{{ links.shoppingList_apk }}"
+                target="_blank"
+                class="projectBtn"
+              >
+                <div>
+                  <div fxLayout="row" fxLayoutAlign="center center">
+                    <div fxFlex="15" fxLayoutAlign="end center">
+                      <i class="devicon-github-original devicon-github"></i>
+                    </div>
+                    <div fxFlex="70">
+                      Winkellijst app <br />
+                      (android)
+                    </div>
+                    <div fxFlex="15"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </div>
 
       <app-quote
         quote="You’re never going to learn something as profoundly as when it’s purely
