@@ -2,7 +2,7 @@
   <div fxFlex fxLayout="row">
     <div fxFlex="20"></div>
     <div fxFlex="60" fxLayout="column" fxLayoutAlign="space-between none">
-      <h1>Links</h1>
+      <div class="subtitle">Links</div>
       <div>
         <mat-expansion-panel class="expansion-panel">
           <mat-expansion-panel-header>
@@ -47,8 +47,8 @@
               <a
                 mat-stroked-button
                 href="{{ links.nitorReport }}"
-                target="_blank"
-                >Stage verslag <br />Nitor.be</a
+                download="stageverslag nitor"
+                >Stageverslag <br />Nitor.be</a
               >
             </div>
             <div>
@@ -79,10 +79,7 @@
                   <div fxFlex="15" fxLayoutAlign="end center">
                     <i class="devicon-github-original devicon-github"></i>
                   </div>
-                  <div fxFlex="70">
-                    Portfolio <br />
-                    (source code)
-                  </div>
+                  <div fxFlex="70">Mijn Github</div>
                   <div fxFlex="15"></div></div
               ></a>
             </div>

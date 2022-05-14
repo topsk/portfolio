@@ -3,6 +3,13 @@
   min-height: var(--component-height);
 }
 
-.mat-list-icon {
-  transform: scale(2);
+.hobby-icon .mat-icon {
+  font-size: calc(20px + 3vw);
+  margin-right: calc(20px + 5vw);
+  color: var(--secondary-light);
+}
+
+.hobby-label {
+  font-size: calc(16px + 3vw);
+  color: var(--secondary-light);
 }

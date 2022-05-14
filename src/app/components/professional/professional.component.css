@@ -12,3 +12,29 @@
   border-radius: 20px;
   padding: 10px;
 }
+
+.padding-bottom {
+  margin-bottom: 150px;
+}
+
+.star {
+  color: var(--secondary-light);
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.softskill {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.softskill-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.spacer {
+  margin-top: 100px;
+}

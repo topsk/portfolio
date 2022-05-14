@@ -3,74 +3,54 @@
     <div fxFlex="20"></div>
     <div fxFlex="60" fxLayout="column" fxLayoutAlign="space-between none">
       <div>
-        <h1>Interesses & hobby's</h1>
+        <div class="subtitle">Interesses & hobby's</div>
       </div>
-      <div fxLayout="column" fxLayoutAlign="space-evenly stretch">
-        <div fxLayout="row" fxLayoutAlign="start center">
+      <div fxLayout="row">
+        <div fxFlex="0" fxFlex.gt-sm="20"></div>
+        <div fxLayout="column">
           <div
-            fxLayout="column"
-            fxLayoutAlign="center center"
-            fxFlex="65"
-            fxFlex.lt-sm="100"
+            fxLayout="row"
+            fxLayoutAlign="start center"
+            [ngStyle]="{ marginBottom: 'calc(20px + 6vh)' }"
           >
-            <mat-list>
-              <mat-list-item>
-                <mat-icon mat-list-icon aria-label="gaming icon"
-                  >sports_esports</mat-icon
-                >
-                <div mat-line>Gamen</div>
-              </mat-list-item>
-
-              <mat-list-item>
-                <mat-icon mat-list-icon aria-label="eBike icon"
-                  >electric_bike</mat-icon
-                >
-                <div mat-line>Fietsen</div>
-              </mat-list-item>
-
-              <mat-list-item>
-                <mat-icon mat-list-icon aria-label="jogging icon"
-                  >directions_run</mat-icon
-                >
-                <div mat-line>Joggen</div>
-              </mat-list-item>
-
-              <mat-list-item>
-                <mat-icon mat-list-icon aria-label="hiking icon"
-                  >hiking</mat-icon
-                >
-                <div mat-line>Hiken</div>
-              </mat-list-item>
-            </mat-list>
+            <div class="hobby-icon">
+              <mat-icon aria-label="gaming icon">sports_esports</mat-icon>
+            </div>
+            <div class="hobby-label">Gamen</div>
           </div>
-          <div fxHide.lt-sm="true"></div>
-        </div>
 
-        <div fxLayout="row" fxLayoutAlign="end center">
-          <div fxHide.lt-sm="true"></div>
           <div
-            fxLayout="column"
-            fxLayoutAlign="center center"
-            fxFlex="65"
-            fxFlex.lt-sm="100"
+            fxLayout="row"
+            fxLayoutAlign="start center"
+            [ngStyle]="{ marginBottom: 'calc(20px + 6vh)' }"
           >
-            <mat-list>
-              <mat-list-item>
-                <mat-icon mat-list-icon aria-label="gamen icon"
-                  >music_note</mat-icon
-                >
-                <div mat-line class="test">Fanfare</div>
-              </mat-list-item>
-              <mat-list-item>
-                <mat-icon mat-list-icon aria-label="gamen icon"
-                  >sports_soccer</mat-icon
-                >
-                <div mat-line>Zaalvoetbal</div>
-              </mat-list-item>
-            </mat-list>
+            <div class="hobby-icon">
+              <mat-icon aria-label="eBike icon">electric_bike</mat-icon>
+            </div>
+            <div class="hobby-label">Fietsen</div>
+          </div>
+
+          <div
+            fxLayout="row"
+            fxLayoutAlign="start center"
+            [ngStyle]="{ marginBottom: 'calc(20px + 6vh)' }"
+          >
+            <div class="hobby-icon">
+              <mat-icon aria-label="jogging icon">directions_run</mat-icon>
+            </div>
+            <div class="hobby-label">Joggen</div>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <div class="hobby-icon">
+              <mat-icon aria-label="hiking icon">hiking</mat-icon>
+            </div>
+            <div class="hobby-label">Hiken</div>
           </div>
         </div>
+        <div fxFlex="0" fxFlex.gt-sm="20"></div>
       </div>
+
       <app-quote
         quote="One must renounce the bad taste of wishing to agree with many people."
         author="Friedrich Nietzsche"

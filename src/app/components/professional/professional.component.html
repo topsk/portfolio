@@ -7,8 +7,9 @@
       fxLayoutAlign="space-between none"
       fxLayoutGap="20px"
     >
-      <h1>Professional</h1>
+      <div class="subtitle">Professional</div>
       <div
+        class="spacer"
         fxLayout="row"
         fxLayoutAlign="space-between center"
         fxLayoutGap="20px"
@@ -28,6 +29,20 @@
         fxLayout="row"
         fxLayoutAlign="space-evenly center"
         fxLayoutGap="20px"
+        [ngStyle]="{ padding: 'calc(15px + 5vw)' }"
+      >
+        <div class="devicon-icon-container">
+          <i class="devicon-angularjs-plain-wordmark devicon-icon colored"></i>
+        </div>
+        <div class="devicon-icon-container">
+          <i class="devicon-react-original-wordmark devicon-icon colored"></i>
+        </div>
+      </div>
+
+      <div
+        fxLayout="row"
+        fxLayoutAlign="space-between center"
+        fxLayoutGap="20px"
       >
         <div class="devicon-icon-container">
           <i class="devicon-csharp-plain-wordmark devicon-icon colored"></i>
@@ -40,16 +55,30 @@
         </div>
       </div>
 
-      <div
-        fxLayout="row"
-        fxLayoutAlign="space-evenly center"
-        fxLayoutGap="20px"
-      >
-        <div class="devicon-icon-container">
-          <i class="devicon-angularjs-plain-wordmark devicon-icon colored"></i>
-        </div>
-        <div class="devicon-icon-container">
-          <i class="devicon-react-original-wordmark devicon-icon colored"></i>
+      <div class="spacer" flexLayout="column">
+        <div
+          class="softskill-container"
+          fxLayout="row"
+          fxLayout.lt-sm="column"
+          *ngFor="let softskill of softskills"
+        >
+          <div class="softskill" fxFlex="25" fxLayout.lt-sm="100">
+            {{ softskill.name }}
+          </div>
+
+          <div fxFlex="75" fxLayout.lt-sm="100" fxLayoutAlign="start center">
+            <mat-icon
+              class="star"
+              *ngFor="let stars of [].constructor(softskill.stars)"
+              >star</mat-icon
+            >
+
+            <mat-icon
+              class="star"
+              *ngFor="let stars of [].constructor(5 - softskill.stars)"
+              >star_border</mat-icon
+            >
+          </div>
         </div>
       </div>
 

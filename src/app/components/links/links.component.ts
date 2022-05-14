@@ -10,7 +10,7 @@ export class LinksComponent implements OnInit {
   links = {
     linkedIn: 'https://www.linkedin.com/in/kristof-tops-408378207/',
     CV: 'assets/docs/MijnCV.pdf',
-    nitorReport: '/',
+    nitorReport: 'assets/docs/eindraport_KT_Nitor.pdf',
     nitorSite: 'https://www.nitor.be/',
     shoppingList_apk: 'assets/docs/reactNative-winkellijst.apk',
     gitHub_general: 'https://github.com/topsk',

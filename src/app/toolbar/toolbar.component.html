@@ -20,10 +20,10 @@
         <div fxLayout="row" fxLayoutAlign="space-evenly center">
           <button
             mat-button
-            [disabled]="!toolbarVisible"
+            [disabled]="toolbarBtnDisabled"
             [ngClass]="{
-              hideBtn: !toolbarVisible,
-              showBtn: toolbarVisible
+              hideBtn: toolbarBtnDisabled,
+              showBtn: !toolbarBtnDisabled
             }"
             (click)="scroll('personal')"
           >
@@ -32,10 +32,10 @@
 
           <button
             mat-button
-            [disabled]="!toolbarVisible"
+            [disabled]="toolbarBtnDisabled"
             [ngClass]="{
-              hideBtn: !toolbarVisible,
-              showBtn: toolbarVisible
+              hideBtn: toolbarBtnDisabled,
+              showBtn: !toolbarBtnDisabled
             }"
             (click)="scroll('interests')"
           >
@@ -44,10 +44,10 @@
 
           <button
             mat-button
-            [disabled]="!toolbarVisible"
+            [disabled]="toolbarBtnDisabled"
             [ngClass]="{
-              hideBtn: !toolbarVisible,
-              showBtn: toolbarVisible
+              hideBtn: toolbarBtnDisabled,
+              showBtn: !toolbarBtnDisabled
             }"
             (click)="scroll('professional')"
           >
@@ -56,10 +56,10 @@
 
           <button
             mat-button
-            [disabled]="!toolbarVisible"
+            [disabled]="toolbarBtnDisabled"
             [ngClass]="{
-              hideBtn: !toolbarVisible,
-              showBtn: toolbarVisible
+              hideBtn: toolbarBtnDisabled,
+              showBtn: !toolbarBtnDisabled
             }"
             (click)="scroll('links')"
           >

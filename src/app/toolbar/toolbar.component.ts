@@ -8,8 +8,8 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class ToolbarComponent implements OnInit {
   toolbarVisible: boolean = false;
   toolbarVisibleScroll: boolean = false;
+  toolbarBtnDisabled: boolean = false;
   menuIcon: string = 'menu';
-  // timeOutRunning: boolean = false;
   scrollTimerId: any;
 
   constructor() {}
@@ -19,6 +19,9 @@ export class ToolbarComponent implements OnInit {
   toggleToolbar() {
     this.toolbarVisible = !this.toolbarVisible;
     this.menuIcon = this.toolbarVisible ? 'menu_open' : 'menu';
+    if (this.toolbarVisible) {
+      this.toolbarBtnDisabled = false;
+    }
   }
 
   scroll(id: string) {
@@ -34,9 +37,11 @@ export class ToolbarComponent implements OnInit {
       clearTimeout(this.scrollTimerId);
 
       this.toolbarVisibleScroll = true;
+      this.toolbarBtnDisabled = false;
 
       this.scrollTimerId = setTimeout(() => {
         this.toolbarVisibleScroll = false;
+        this.toolbarBtnDisabled = true;
       }, 1500);
     }
   }
